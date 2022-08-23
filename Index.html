@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">   
+<head> 
+    <title>survey form</title>
+    <link href="style.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Survey, Learning Project">
+    <meta name="description" content="Survey form for a freecodecamp curriculum project">
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1 id="title">Survey form for my first survey form</h1>
+            <p id="description">This is my first ever survey form using html and css, thank you for your time!</p>
+        </header>
+    <form id="survey-form" action="">
+
+<!--personal information section below this line -->
+        <label for="name" id="name-label">Name:</label><br>
+        <input placeholder="your name" required type="text" id="name" name="name"> <br>
+
+        <label id="email-label" for="email">Email:</label><br>
+        <input placeholder="you@email.com" required type="email" name="email" id="email"><br>
+
+        <label id="number-label" for="number">Age(optional):</label><br>
+        <input placeholder="your age" min="18" max="10000" type="number" id="number" name="number">
+
+<!--Accessibility section below this line-->
+        
+        <h2>Do you have any disability?</h2>
+        <input type="checkbox" name="disability" id="disability1" value="100Blind">
+        <label for="disability1">Yes, i am completely blind</label><br>
+        <input type="checkbox" name="disability" id="disability2" value="partialVision">
+        <label for="disability2">Yes, i have partial vision</label><br>
+        <input type="checkbox" name="disability" id="disability3" value="colorblind">
+        <label for="disability3">Yes, i am colorblind</label><br>
+        <input type="checkbox" name="disability" id="disability4" value="physicalDis">
+        <label for="disability4">Yes, I am physically disabled</label><br>
+        <input type="checkbox" name="disability" id="disability5" value="no">
+        <label for="disability5">No</label><br>
+        <input type="checkbox" name="disability" id="disability6" value="notSent">
+        <label for="disability6">I'd rather not talk</label>
+        
+        <h2>Are you using any accessibility tool?</h2>
+        <input type="checkbox" name="accessibility" id="accessibility1" value="screenReader">
+        <label for="accessibility1">Yes, i use a screen reader</label><br>
+        <input type="checkbox" name="accessibility" id="accessibility2" value="voiceNav">
+        <label for="accessibility2">Yes, i am using voice access or other voice navigation software</label><br>
+        <input type="checkbox" name="accessibility" id="accessibility3" value="assist">
+        <label for="accessibility3">No, but i need someone to assist me</label><br>
+        <input type="checkbox" name="accessibility" id="accessibility4" value="notDisabled">
+        <label for="accessibility4">Yes, but not for accessibility purposes</label><br>
+        <input type="checkbox" name="accessibility" id="accessibility5" value="no">
+        <label for="accessibility5">No</label><br>
+        <input type="checkbox" name="accessibility" id="accessibility6" value="notSent">
+        <label for="accessibility6">I'd rather not talk</label><br>
+        <label for="accessibility7">Other:</label>
+        <input type="text" name="accessibility" id="accessibility7"><br>
+        
+<!--Accessibility section above this line-->        
+        
+
+        <label for="dropdown">What device are you using to access this page?</label><br>
+
+    <select name="dropdown" id="dropdown">
+        <option value="smartphone">Smartphone</option><br>
+        <option value="tablet">Tablet</option><br>
+        <option value="PC">PC(Personal computer)</option><br>
+    </select><br>
+
+        <label for="size">What size is your device? Does it has a high resolution?</label><br>
+        <input type="text" id="size" name="size">
+<!--personal information section above this line-->
+
+<!--1-5 rating section below this line-->
+        <h2 class="1-5Section">Please, answer the following from 1(bad) to 5(really good)</h2>
+
+
+        <h3 class="1-5Section">How does the page look?</h3>
+    <div id="looksSection" class= "1-5Section">
+        <label for="looks1">1</label>
+        <input type="radio" id="looks1" name="looks" value="1">
+        <label for="looks2">2</label>
+        <input type="radio" id="looks2" name="looks" value="2">
+        <label for="looks3">3</label>
+        <input type="radio" id="looks3" name="looks" value="3">
+        <label for="looks4">4</label>
+        <input type="radio" id="looks4" name="looks" value="4">
+        <label for="looks5">5</label>
+        <input type="radio" id="looks5" name="looks" value="5"><br>
+    </div>
+    
+    <div id="responsivitySection" class="1-5Section">
+        <h3 class="1-5Section" >How responsive is the page?</h3>
+        <label for="responsivity1">1</label>
+        <input type="radio" id="responsivity1" name="responsivity" value="1">
+        <label for="responsivity2">2</label>
+        <input type="radio" id="responsivity2" name="responsivity" value="2">
+        <label for="responsivity3">3</label>
+        <input type="radio" id="responsivity3" name="responsivity" value="3">
+        <label for="responsivity4">4</label>
+        <input type="radio" id="responsivity4" name="responsivity" value="4">
+        <label for="responsivity5">5</label>
+        <input type="radio" id="responsivity5" name="responsivity" value="5"><br>
+    </div>
+<!--1-5 rating section above this line-->
+
+        <label for="feedback">Any comments or suggestions?</label><br>
+        <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+        <input type="submit" id="submit">
+
+    </form>
+    </main>
+</body>
+
+</html>
